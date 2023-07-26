@@ -13,7 +13,7 @@
   padding: 20px 0 20px 0;
 }
 .list .row__posters::-webkit-scrollbar {
-  display: none;
+  display: scroll;
 }
 .list .row__poster {
   margin-right: 10px;

@@ -10,7 +10,7 @@
   height: 100%;
 }
 .login img {
-  max-width: 100%;
+  min-width: 100%;
 }
 
 .login .holder {
@@ -20,7 +20,7 @@
   width: 450px;
   position: absolute;
   z-index: 1;
-  margin-top: 100px;
+  margin-top: 140px;
   left: calc(50% - 225px);
 }
 .login .holder input {
@@ -47,4 +47,13 @@
   margin-top: 10px;
   margin-bottom: 15px;
   width: 100%;
+}
+/*================ media queries (small devices) ==================*/
+
+@media screen and (max-width: 600px) {
+  .login .holder {
+    width: 300px;
+    left: calc(50% - 150px);
+    padding: 50px 40px 50px;
+  }
 }

@@ -1,9 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./home.css";
 function Home() {
   return (
     <div>
-      {" "}
       <div className="home-banner">
         <div className="our-story">
           <h1 className="our-story-card-title" data-uia="hero-title">
@@ -25,9 +25,11 @@ function Home() {
               className="form-control"
               placeholder="Email Address"
             />
-            <button className="input-group-button btn btn-danger text-white">
-              Get Started
-            </button>
+            <Link to={"/login"}>
+              <button className="input-group-button btn btn-danger text-white">
+                Get Started
+              </button>
+            </Link>
           </div>
         </div>
         <div className="shadow"></div>
